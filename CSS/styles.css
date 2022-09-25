@@ -78,14 +78,21 @@ h1{
    .card{
     display:inline grid;
     grid-template-columns:1fr 1fr;
-    grid-template-rows:auto;
+    grid-template-rows:1fr;
     grid-template-areas: 
-        "pic faqs";
+        "pic faqs"
+         pic faqs;
    }
+
    .pic{
     grid-area: pic;
+    margin: 3rem 1rem;
+    max-width: 375px;
    }
    .faq{
     grid-area: faqs;
    }
+   .main__image{
+    width: 375px;
+}
   }
